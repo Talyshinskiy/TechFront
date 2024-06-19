@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("index.js d1d"),console.log(3352)})();
