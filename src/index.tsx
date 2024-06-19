@@ -1,3 +1,12 @@
-console.log("index.js d1d")
-console.log((121 + 3231))
+import {createRoot} from "react-dom/client";
+import {App} from "./components/App";
+import React from "react";
+const root = document.getElementById('root')
 
+if (!root) {
+  throw new Error('root not found')
+}
+
+const container = createRoot(root)
+
+container.render(<App />)
