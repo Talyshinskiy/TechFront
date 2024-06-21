@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-
+import "./Timer.scss"
 const SimpleTimer: React.FC = () => {
   const [seconds, setSeconds] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(false);
