@@ -1,5 +1,12 @@
 import {createRoot} from "react-dom/client";
 import {App} from "./components/App";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Main} from "@/page/main";
+import {About} from "@/page/about";
+import {Quizzes} from "@/page/quizzes";
+import {KnowledgeDatabase} from "@/page/knowledgeDatabase";
+import {Suspense} from "react";
+
 const root = document.getElementById('root')
 
 if (!root) {
@@ -7,5 +14,29 @@ if (!root) {
 }
 
 const container = createRoot(root)
-
-container.render(<App />)
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+    children: [
+      {
+        path: '/main',
+        element: <Suspense fallback={'Loading...'}><Main/></Suspense>
+      },
+      {
+        path: '/about',
+        element: <Suspense fallback={'Loading...'}><About/></Suspense>
+      },
+      {
+        path: '/quizzes',
+        element: <Suspense fallback={'Loading...'}><Quizzes/></Suspense>
+      },
+      {
+        path: '/knowledgeDatabase',
+        element: <Suspense fallback={'Loading...'}><KnowledgeDatabase/></Suspense>
+      }
+    ]
+  },
+]);
+container.render(<RouterProvider router={router}/>
+)

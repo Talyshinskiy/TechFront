@@ -1,5 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react';
-import "./Timer.scss"
+import * as styles from './Timer.module.scss';
+
 const SimpleTimer: React.FC = () => {
   const [seconds, setSeconds] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -32,9 +33,9 @@ const SimpleTimer: React.FC = () => {
       <div style={{textAlign: 'center', marginTop: '50px'}}>
         <h1>Время: {seconds} секунд</h1>
         <div>
-          <button onClick={handleStart} disabled={isActive}>Старт</button>
-          <button onClick={handlePause} disabled={!isActive}>Пауза</button>
-          <button onClick={handleReset}>Сброс</button>
+          <button className={styles.button} onClick={handleStart} disabled={isActive}>Старт</button>
+          <button className={styles.button} onClick={handlePause} disabled={!isActive}>Пауза</button>
+          <button className={styles.button} onClick={handleReset}>Сброс</button>
         </div>
       </div>
   );

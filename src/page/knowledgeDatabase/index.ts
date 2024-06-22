@@ -1,0 +1,1 @@
+export {LazyKnowledgeDatabase as KnowledgeDatabase} from './KnowledgeDatabase.lazy'

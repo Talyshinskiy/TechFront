@@ -1,0 +1,1 @@
+export {LazyQuizzes as Quizzes} from './Quizzes.lazy'
