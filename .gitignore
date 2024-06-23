@@ -1,7 +1,4 @@
 node_modules/
-.env
+.env/
 .cache/
 dist/
-build/
-
-.idea
