@@ -1,0 +1,1 @@
+export {LazyFullscreenAuth as FullscreenAuth} from './FullscreenAuth.lazy'
