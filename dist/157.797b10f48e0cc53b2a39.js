@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktechfront=self.webpackChunktechfront||[]).push([[157],{157:(e,t,n)=>{n.r(t),n.d(t,{default:()=>r});var c=n(6540);const r=function(){return c.createElement("h1",null,"QUIZZES")}}}]);
