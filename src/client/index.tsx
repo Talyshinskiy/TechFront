@@ -1,13 +1,13 @@
 import {createRoot} from "react-dom/client";
 import {App} from "./components/App";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Main} from "@/page/main";
-import {About} from "@/page/about";
-import {Quizzes} from "@/page/quizzes";
-import {KnowledgeDatabase} from "@/page/knowledgeDatabase";
+import {Main} from "@/client/page/main";
+import {About} from "@/client/page/about";
+import {Quizzes} from "@/client/page/quizzes";
+import {KnowledgeDatabase} from "@/client/page/knowledgeDatabase";
 import {Suspense} from "react";
-import {Profile} from "@/page/profile";
-import {FullscreenAuth} from "@/page/auth";
+import {Profile} from "@/client/page/profile";
+import {FullscreenAuth} from "@/client/page/auth";
 
 const root = document.getElementById('root')
 

@@ -1,8 +1,9 @@
 import Timer from "./Timer";
 import {Link, Outlet} from 'react-router-dom'
-import logoWhite from '@/assets/logoWhite.jpg'
-import IconHome from '@/assets/iconHome.svg'
-import FullscreenAuth from "@/page/auth/FullscreenAuth";
+import logoWhite from '@/client/assets/logoWhite.jpg'
+import IconHome from '@/client/assets/iconHome.svg'
+import FullscreenAuth from "@/client/page/auth/FullscreenAuth";
+
 
 
 export const App = () => {

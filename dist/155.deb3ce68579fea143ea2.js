@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktechfront=self.webpackChunktechfront||[]).push([[155],{1155:(e,t,n)=>{n.r(t),n.d(t,{default:()=>r});var l=n(6540);const r=function(){return l.createElement("div",null,l.createElement("h1",null,"Profile"))}}}]);
